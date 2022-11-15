@@ -3,7 +3,7 @@ const { name, height, message } = require("../index.js");
 
 describe('what-is-a-test', () => {
   describe('Name', () => {
-    it('returns "Joe"', () => {
+    it('returns "Susan"', () => {
       expect(name).toEqual('Joe')
     })
   })
@@ -11,7 +11,7 @@ describe('what-is-a-test', () => {
 
   describe('Height', () => {
     it('is less than 40', () => {
-      expect(height).toEqual(74)
+      expect(height).toBeLessThan(40);
     })
   })
 
